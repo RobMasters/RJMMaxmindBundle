@@ -72,9 +72,7 @@ abstract class BaseGeolocation
      */
     protected function getIp()
     {
-        //return $this->request->getClientIp();
-
-        return '89.204.214.79';
+        return $this->request->getClientIp();
     }
 
     /**
