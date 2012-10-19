@@ -22,6 +22,9 @@ class RJMMaxmindExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
+        $container->setParameter('rjm_maxmind.licence_key', $config['licence_key']);
+        $container->setParameter('rjm_maxmind.service_url', $config['service_url']);
+
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
     }

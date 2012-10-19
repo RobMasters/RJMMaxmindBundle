@@ -20,9 +20,12 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('rjm_maxmind');
 
-        // Here you should define the parameters that are allowed to
-        // configure your bundle. See the documentation linked above for
-        // more information on that topic.
+        $rootNode
+            ->children()
+                ->scalarNode('service_url')->defaultValue('http://geoip.maxmind.com')->end()
+                ->scalarNode('licence_key')->isRequired()->cannotBeEmpty()->end()
+            ->end()
+        ;
 
         return $treeBuilder;
     }
