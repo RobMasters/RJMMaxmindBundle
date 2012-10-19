@@ -1,0 +1,7 @@
+parameters:
+#    rjm_maxmind.example.class: RJM\Bundle\MaxmindBundle\Example
+
+services:
+#    rjm_maxmind.example:
+#        class: %rjm_maxmind.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
