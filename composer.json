@@ -1,0 +1,28 @@
+{
+    "name": "robmasters/maxmind-bundle",
+    "type": "symfony-bundle",
+    "description": "This Bundle provides services for integrating with Maxmind for Geolocation functionality",
+    "keywords": ["maxmind", "geolocation", "geoblock"],
+    "homepage": "https://github.com/RobMasters",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Masters",
+            "email": "robmasters87@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.2"
+    },
+
+    "require-dev": {
+        "sensio/framework-extra-bundle":  ">=2.0,<2.3-dev"
+    },
+
+    "autoload": {
+        "psr-0": { "RJM\\Bundle\\MaxmindBundle": "" }
+    },
+
+    "target-dir": "RJM/Bundle/MaxmindBundle"
+}
